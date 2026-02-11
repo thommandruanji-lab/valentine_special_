@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+.container{
+    height: 100vh;
+    width:100vw;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerContainer{
+    height: 50vh;
+    width:50vw;
+    align-content: center;
+    background-color: white;
+    border:1px solid white;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: column;
+     
+    
+}
+
+.upperContainer{
+    height: 60%;
+    width: 100% ;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    border: 2px;
+}
+
+.lowerContainer{
+    height: 40%;
+    width: 100% ;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;  
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;  
+    position: relative;
+
+}
+
+.btn1,.btn2{
+    height: 3rem;
+    width: 4rem;
+    border:none;
+    border-radius: 25%;
+    background-color: pink;
+    color:black;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+
+}
+
+.btn1{
+    left:35%;
+    
+}
+
+
+.btn2{
+    left:60%;
+    
+}
+
+
+
+
+.message{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ align-content: baseline;
+ font-size: 2rem;
+ align-items: center;
+ font-family: 'Dancing Script', cursive;
+
+ font-weight: 400; 
+ line-height: 1.6; 
+ 
+}
+
+.message pre {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+    white-space: pre-wrap; 
+}
+
+
+.innerContainer.show-letter {
+    justify-content: flex-end; 
+    padding-bottom: 1.5rem;      
+}
+
+.none{
+    display: none;
+}
+
+/* --- MOBILE RESPONSIVE STYLES --- */
+@media (max-width: 768px) {
+    
+    
+    .innerContainer {
+        width: 90vw;       
+        height: auto;      
+        min-height: 50vh;  
+        border-radius: 30px; 
+    }
+
+    
+    .upperContainer {
+        height: auto;     
+        padding: 20px 0; 
+        
+    }
+
+    .lowerContainer {
+        height: 100px;     
+    }
+
+    img {
+        max-width: 80% !important; 
+        height:100px !important;
+    }
+
+  
+    .btn1, .btn2 {
+        width: 3.5rem;    
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    .btn1 {
+        left: 20%;        
+    }
+    
+    .btn2 {
+        left: 60%;        
+    }
+
+    
+    .message pre {
+        font-size: 0.9rem; 
+        width: 95%;        
+    }
+    #givingHeart{
+        display: none;
+    }
+}
+
